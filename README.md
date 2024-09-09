@@ -1,3 +1,3 @@
-# This is my first Project in Js
+# Here are couple basic JS projects 
 <br>
-this a code about a game called # Slot Machine
+note:index.html is a code about a game called # Slot Machine
