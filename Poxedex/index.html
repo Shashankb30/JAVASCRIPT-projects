@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Search</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">POKÉDEX</div>
+            <div class="subtitle">Search for any Pokémon by name or ID</div>
+            <div class="search-container">
+                <input type="text" id="pokemon-search" placeholder="Enter Pokémon name or ID (e.g. Pikachu or 69)">
+                <button id="search-btn">Search</button>
+            </div>
+        </header>
+        
+        <main>
+            <div class="pokemon-display" id="pokemon-display">
+                <div class="instructions">
+                    <p>Search for a Pokémon to display its information</p>
+                    <p>Try: Pikachu, Charizard, Mewtwo, Ditto, Eevee</p>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Pokémon Search Application &copy; 2023 | Data from PokeAPI</p>
+        </footer>
+    </div>
+
+    <script src="script.js"> </script>
+</body>
+</html>

@@ -1,0 +1,253 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #ffde00 0%, #b3a125 100%);
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(to right, #cc0000, #b30000);
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .logo {
+            font-family: 'Press Start 2P', cursive;
+            color: #ffde00;
+            font-size: 2.5rem;
+            text-shadow: 3px 3px 0 #000;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: white;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+        
+        .search-container {
+            display: flex;
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 50px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        #pokemon-search {
+            flex: 1;
+            padding: 15px 20px;
+            border: none;
+            font-size: 1.1rem;
+            outline: none;
+        }
+        
+        #search-btn {
+            background: #ffde00;
+            color: #333;
+            border: none;
+            padding: 0 25px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+        
+        #search-btn:hover {
+            background: #e6c900;
+        }
+        
+        main {
+            padding: 30px;
+        }
+        
+        .pokemon-display {
+            text-align: center;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .pokemon-image {
+            height: 200px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+        
+        .pokemon-image:hover {
+            transform: scale(1.1);
+        }
+        
+        .pokemon-name {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 1.8rem;
+            color: #cc0000;
+            text-transform: capitalize;
+            margin-bottom: 10px;
+        }
+        
+        .pokemon-id {
+            background: #3b4cca;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 1.1rem;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        
+        .pokemon-details {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+            width: 100%;
+            max-width: 500px;
+        }
+        
+        .detail-card {
+            background: #f0f0f0;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+        }
+        
+        .detail-card h3 {
+            color: #3b4cca;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .detail-card p {
+            font-size: 1rem;
+            color: #333;
+        }
+        
+        .type-badge {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            color: white;
+            font-weight: bold;
+            margin: 0 3px;
+            text-transform: capitalize;
+        }
+        
+        .stats-container {
+            width: 100%;
+            max-width: 500px;
+            margin-top: 20px;
+        }
+        
+        .stat-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        
+        .stat-name {
+            width: 120px;
+            text-align: right;
+            padding-right: 15px;
+            font-weight: bold;
+            color: #3b4cca;
+            text-transform: capitalize;
+        }
+        
+        .stat-bar-container {
+            flex: 1;
+            height: 20px;
+            background: #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .stat-bar {
+            height: 100%;
+            background: linear-gradient(to right, #4caf50, #8bc34a);
+            border-radius: 10px;
+        }
+        
+        .stat-value {
+            width: 40px;
+            text-align: right;
+            padding-left: 10px;
+            font-weight: bold;
+        }
+        
+        .error-message {
+            color: #cc0000;
+            font-size: 1.2rem;
+            text-align: center;
+            padding: 30px;
+            font-weight: bold;
+        }
+        
+        .instructions {
+            text-align: center;
+            color: #666;
+            font-style: italic;
+            margin-top: 20px;
+        }
+        
+        footer {
+            background: #3b4cca;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 600px) {
+            .logo {
+                font-size: 1.8rem;
+            }
+            
+            .pokemon-details {
+                grid-template-columns: 1fr;
+            }
+            
+            .detail-card {
+                padding: 10px;
+            }
+        }
+        
+        .loading {
+            font-size: 1.5rem;
+            color: #3b4cca;
+            text-align: center;
+            padding: 30px;
+        }
+        
+        .fa-spinner {
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
